@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>寻味中国 Taste of China · 国家级美食文化IP商务门户</title>
+<meta name="description" content="《寻味中国》由中视泓创出品、陈晓卿担任总导演，以美食为纽带的人文纪录片IP。总台+腾讯视频+华为生态+中国航空播出，京东生鲜战略电商合作伙伴。涵盖IP档案、内容规划、资产体系、授权体系与商务合作全链路。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23171108'/%3E%3Ctext x='32' y='44' font-size='32' font-family='KaiTi,serif' font-weight='700' fill='%23D2A65A' text-anchor='middle'%3E寻%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://miaoda.feishu.cn">
+<link href="https://miaoda.feishu.cn/fonts/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#171208;
+  --ink-2:#241B0E;
+  --ink-3:#33281A;
+  --gold:#C9A050;
+  --gold-2:#D9B776;
+  --gold-3:#F0E2BC;
+  --brown:#7A5B2E;
+  --paper:#EAE0C0;
+  --paper-2:#F2E9CF;
+  --line:rgba(122,91,46,.28);
+  --text:#4A4133;
+  --muted:#8A7D64;
+  --kai:'Ma Shan Zheng','KaiTi','STKaiti','Noto Serif SC',serif;
+  --serif:'Noto Serif SC','Songti SC','STSong',SimSun,serif;
+  --sans:'Noto Sans SC','PingFang SC','Microsoft YaHei',system-ui,sans-serif;
+  --shadow:0 16px 44px rgba(23,18,8,.14);
+  --shadow-lg:0 28px 70px rgba(23,18,8,.22);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--paper);line-height:1.8;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:url(assets/paper.jpg) center/cover no-repeat;opacity:.55}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 0%,rgba(255,251,238,.5),transparent 60%)}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.sec{padding:104px 0;position:relative}
+section[id]{scroll-margin-top:70px}
+
+/* ============ 区块标题（PPT章节风） ============ */
+.sec-head{text-align:center;max-width:860px;margin:0 auto 60px}
+.chap{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:var(--gold-2);font-family:var(--serif);font-size:12.5px;font-weight:700;letter-spacing:.34em;padding:7px 20px 7px 24px;border-radius:2px;position:relative;z-index:2}
+.sec-head .eyebrow{display:inline-flex;align-items:center;gap:16px;color:var(--brown);font-size:12.5px;font-weight:700;letter-spacing:.4em;margin-top:18px}
+.sec-head .eyebrow::before,.sec-head .eyebrow::after{content:"";width:44px;height:1px;background:var(--gold);opacity:.7}
+.sec-head h2{font-family:var(--serif);font-weight:900;color:var(--ink);font-size:clamp(27px,3.4vw,42px);line-height:1.4;margin-top:16px;letter-spacing:.06em}
+.sec-head h2 .gm{color:var(--brown)}
+.sec-head .sub{color:var(--muted);font-size:15px;margin-top:13px;font-weight:300;letter-spacing:.05em}
+.sec-head .en{display:block;color:rgba(122,91,46,.55);font-size:11px;letter-spacing:.5em;margin-top:8px;text-transform:uppercase}
+
+/* ============ 按钮 ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-size:15px;font-weight:600;letter-spacing:.16em;padding:15px 40px;border-radius:2px;transition:all .3s ease;cursor:pointer;border:none}
+.btn-gold{background:linear-gradient(135deg,#C9A050,#B98D3E);color:#1B1509;box-shadow:0 10px 28px rgba(201,160,80,.4)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(201,160,80,.5);background:linear-gradient(135deg,#D9B776,#C9A050)}
+.btn-line{border:1px solid rgba(240,226,188,.6);color:var(--gold-3);background:transparent}
+.btn-line:hover{background:rgba(240,226,188,.12);border-color:var(--gold-3);transform:translateY(-2px)}
+.btn-dark{border:1px solid var(--brown);color:var(--brown);background:transparent}
+.btn-dark:hover{background:var(--brown);color:var(--paper-2);transform:translateY(-2px)}
+
+/* ============ 导航 ============ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .35s ease;padding:20px 0;background:linear-gradient(180deg,rgba(15,11,4,.65),transparent)}
+.nav.scrolled{background:rgba(18,13,5,.96);padding:11px 0;box-shadow:0 6px 30px rgba(10,7,2,.5)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center}
+.brand-logo{display:block;height:clamp(30px,3.2vw,44px);width:auto;max-width:40vw;object-fit:contain;filter:drop-shadow(0 2px 10px rgba(0,0,0,.35));transition:height .3s ease}
+.nav.scrolled .brand-logo{height:32px}
+.menu{display:flex;align-items:center;gap:26px}
+.menu a{color:rgba(242,233,207,.85);font-size:13.5px;letter-spacing:.1em;position:relative;padding:6px 0;transition:color .25s}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:width .3s}
+.menu a:hover,.menu a.active{color:var(--gold-2)}
+.menu a:hover::after,.menu a.active::after{width:100%}
+.menu .btn-nav{margin-left:4px;padding:10px 22px;border:1px solid var(--gold);color:var(--gold-2);border-radius:2px;letter-spacing:.14em;font-size:13px}
+.menu .btn-nav::after{display:none}
+.menu .btn-nav:hover{background:var(--gold);color:#171208}
+.hamburger{display:none;width:42px;height:42px;background:rgba(242,233,207,.08);border:1px solid rgba(242,233,207,.3);border-radius:6px;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.hamburger span{display:block;width:20px;height:2px;background:#F2E9CF;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ============ 首屏封面 ============ */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#0D0A05;text-align:center}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.5;transform:scale(1.04);animation:heroZoom 18s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1.04)}to{transform:scale(1.12)}}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,7,2,.72) 0%,rgba(13,9,3,.45) 42%,rgba(10,7,2,.92) 100%)}
+.hero-inner{position:relative;z-index:2;padding:140px 24px 110px}
+.hero-logo{height:min(38vh,340px);width:auto;margin:0 auto;filter:drop-shadow(0 10px 50px rgba(201,160,80,.3))}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:18px;color:var(--gold-2);font-size:14px;letter-spacing:.5em;font-weight:500;margin-top:32px}
+.hero-eyebrow::before,.hero-eyebrow::after{content:"";width:52px;height:1px;background:var(--gold);opacity:.8}
+.hero-title{font-family:var(--serif);font-weight:700;color:#F2E9CF;font-size:clamp(19px,2.5vw,29px);line-height:1.75;letter-spacing:.2em;margin-top:18px}
+.hero-sub{color:rgba(242,233,207,.62);font-size:clamp(12px,1.5vw,15px);letter-spacing:.3em;margin-top:10px;font-weight:300}
+.hero-tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.hero-tags span{font-size:12.5px;color:rgba(240,226,188,.85);border:1px solid rgba(240,226,188,.28);padding:6px 16px;border-radius:999px;letter-spacing:.1em;background:rgba(242,233,207,.05)}
+.hero-actions{display:flex;gap:20px;justify-content:center;margin-top:46px;flex-wrap:wrap}
+.hero-more{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:2;width:28px;height:46px;border:1.5px solid rgba(240,226,188,.55);border-radius:20px;display:flex;align-items:flex-start;justify-content:center;padding-top:8px}
+.hero-more span{width:4px;height:8px;border-radius:4px;background:var(--gold-3);animation:float 1.8s infinite}
+@keyframes float{0%{transform:translateY(0);opacity:1}60%{transform:translateY(12px);opacity:.3}100%{transform:translateY(0);opacity:1}}
+.hero-seal{position:absolute;top:118px;right:6%;z-index:3;writing-mode:vertical-rl;font-family:var(--kai);color:rgba(217,183,118,.55);font-size:15px;letter-spacing:.5em;border:1px solid rgba(217,183,118,.35);padding:14px 6px;border-radius:3px;backdrop-filter:blur(2px)}
+.hero-ver{position:absolute;top:118px;left:6%;z-index:3;color:rgba(242,233,207,.5);font-size:11px;letter-spacing:.3em;border-left:1px solid rgba(201,160,80,.4);padding-left:12px;text-align:left;line-height:2}
+
+/* ============ 金句横条 ============ */
+.motto{background:var(--ink);color:var(--gold-3);text-align:center;padding:20px 16px;font-family:var(--serif);font-size:15px;letter-spacing:.4em;position:relative;overflow:hidden}
+.motto::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 120%,rgba(201,160,80,.22),transparent 60%)}
+.motto b{color:var(--gold);font-weight:700}
+
+/* ============ 档案页（PPT档案页风） ============ */
+.about-grid{display:grid;grid-template-columns:210px 1fr;gap:60px;align-items:stretch}
+.vblock{background:var(--ink);color:var(--paper-2);writing-mode:vertical-rl;display:flex;align-items:center;justify-content:space-between;padding:38px 26px;font-family:var(--kai);font-size:44px;letter-spacing:.32em;line-height:1.4;border-radius:4px;box-shadow:var(--shadow-lg);position:relative}
+.vblock::after{content:"中视泓创 出品";writing-mode:vertical-rl;font-family:var(--sans);font-size:11px;letter-spacing:.4em;color:var(--gold-2);opacity:.85;margin-right:6px}
+.about-copy .lead{font-family:var(--serif);color:var(--ink);font-size:clamp(19px,2.1vw,25px);line-height:2;font-weight:600;letter-spacing:.04em}
+.about-copy .lead em{font-style:normal;color:var(--brown);font-weight:700}
+.about-copy p.desc{color:var(--muted);font-size:15px;margin-top:16px}
+.profile{margin-top:30px;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:rgba(255,252,242,.55)}
+.profile-row{display:grid;grid-template-columns:150px 1fr;border-bottom:1px solid var(--line)}
+.profile-row:last-child{border-bottom:none}
+.profile-row dt{background:rgba(122,91,46,.08);color:var(--brown);font-family:var(--serif);font-weight:700;font-size:13.5px;letter-spacing:.18em;display:flex;align-items:center;padding:13px 20px}
+.profile-row dd{color:var(--ink);font-size:14.5px;padding:13px 20px;letter-spacing:.03em;display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.ptag{font-size:12.5px;color:var(--brown);border:1px solid var(--line);background:rgba(255,252,242,.6);padding:4px 14px;border-radius:999px;letter-spacing:.1em}
+.ptag.hl{background:var(--ink);color:var(--gold-2);border-color:var(--ink)}
+.kw-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px}
+.kw-card{background:rgba(255,252,242,.6);border:1px solid var(--line);border-radius:6px;padding:28px 22px;text-align:center;transition:all .35s ease;position:relative;overflow:hidden}
+.kw-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold)}
+.kw-card .big{font-family:var(--kai);font-size:30px;color:var(--ink);letter-spacing:.14em}
+.kw-card .bar{width:34px;height:3px;background:var(--gold);margin:14px auto}
+.kw-card p{color:var(--muted);font-size:13px;line-height:1.9}
+
+/* ============ 主创 ============ */
+.crew{background:var(--ink);position:relative;overflow:hidden}
+.crew::before{content:"";position:absolute;top:-240px;right:-180px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(201,160,80,.15),transparent 65%)}
+.crew::after{content:"";position:absolute;bottom:-280px;left:-200px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(201,160,80,.09),transparent 65%)}
+.crew .sec-head h2{color:#F2E9CF}
+.crew .sec-head .sub{color:rgba(242,233,207,.5)}
+.crew .eyebrow{color:var(--gold-2)}
+.crew-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:940px;margin:0 auto}
+.crew-card{background:rgba(242,233,207,.05);border:1px solid rgba(242,233,207,.14);border-radius:6px;padding:40px 36px;backdrop-filter:blur(4px);transition:all .35s ease}
+.crew-card:hover{border-color:var(--gold);transform:translateY(-6px);background:rgba(242,233,207,.08)}
+.crew-card .role{font-size:12.5px;color:var(--gold-2);letter-spacing:.32em;font-weight:600}
+.crew-card h3{font-family:var(--kai);color:#F2E9CF;font-size:40px;font-weight:400;letter-spacing:.14em;margin:12px 0 4px}
+.crew-card .works{font-family:var(--serif);color:var(--gold);font-size:14px;letter-spacing:.04em;font-weight:600;margin-bottom:14px;line-height:1.8}
+.crew-card p{color:rgba(242,233,207,.62);font-size:14px;line-height:1.9}
+
+/* ============ 核心人群 ============ */
+.aud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.aud-card{background:rgba(255,252,242,.6);border:1px solid var(--line);border-radius:6px;padding:30px 26px;transition:all .35s ease;position:relative;overflow:hidden}
+.aud-card::before{content:attr(data-no);position:absolute;right:12px;top:2px;font-family:var(--serif);font-size:50px;font-weight:900;color:rgba(122,91,46,.09);line-height:1}
+.aud-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold)}
+.aud-card .ic{font-size:28px}
+.aud-card h3{font-family:var(--serif);color:var(--brown);font-size:14px;letter-spacing:.24em;font-weight:700;margin:12px 0 8px}
+.aud-card p{color:var(--ink);font-size:14px;line-height:1.9}
+.aud-card small{display:block;color:var(--muted);font-size:12.5px;margin-top:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tags span{font-size:12px;color:var(--brown);border:1px dashed var(--line);padding:3px 12px;border-radius:999px}
+
+/* ============ 价值主张 ============ */
+.value-flow{display:flex;align-items:stretch;justify-content:center;gap:0;margin-bottom:60px;flex-wrap:wrap}
+.vf-step{flex:1;min-width:220px;max-width:320px;background:rgba(255,252,242,.6);border:1px solid var(--line);padding:30px 26px;text-align:center;position:relative;transition:all .35s ease}
+.vf-step:first-child{border-radius:8px 0 0 8px}
+.vf-step:last-child{border-radius:0 8px 8px 0;background:var(--ink);border-color:var(--ink)}
+.vf-step:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.vf-step .no{font-family:var(--serif);color:var(--gold);font-size:12px;letter-spacing:.3em;font-weight:700}
+.vf-step h3{font-family:var(--serif);color:var(--ink);font-size:19px;font-weight:700;margin-top:10px;letter-spacing:.04em}
+.vf-step p{color:var(--muted);font-size:13px;margin-top:8px}
+.vf-step:last-child h3{color:var(--gold-2)}
+.vf-step:last-child p{color:rgba(242,233,207,.62)}
+.vf-arrow{display:flex;align-items:center;color:var(--gold);font-size:26px;padding:0 10px}
+.city-cases{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:64px}
+.cc-card{position:relative;border-radius:8px;overflow:hidden;box-shadow:var(--shadow-lg);min-height:340px;display:flex;align-items:flex-end}
+.cc-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.cc-card:hover img{transform:scale(1.05)}
+.cc-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,9,3,.15) 30%,rgba(13,9,3,.9))}
+.cc-body{position:relative;z-index:2;padding:30px 32px;color:#F2E9CF}
+.cc-body .tag{display:inline-block;font-size:11.5px;letter-spacing:.3em;color:var(--gold-2);border:1px solid rgba(217,183,118,.5);padding:4px 14px;border-radius:999px;margin-bottom:12px}
+.cc-body h3{font-family:var(--serif);font-size:22px;font-weight:700;letter-spacing:.06em}
+.cc-body .num{font-family:var(--serif);font-size:clamp(28px,3vw,38px);font-weight:900;color:var(--gold);line-height:1.2;margin:8px 0}
+.cc-body .num small{font-size:.44em;font-weight:600;letter-spacing:.14em}
+.cc-body p{color:rgba(242,233,207,.75);font-size:13.5px;line-height:1.9}
+.stats-title{text-align:center;font-family:var(--serif);color:var(--ink);font-size:17px;letter-spacing:.3em;font-weight:700;margin-bottom:30px}
+.stats-title span{color:var(--brown)}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.stat{background:rgba(255,252,242,.55);border:1px solid var(--line);border-radius:5px;padding:34px 26px;text-align:center;transition:all .3s ease}
+.stat:hover{transform:translateY(-6px);box-shadow:var(--shadow);background:rgba(255,252,242,.8)}
+.stat .num{font-family:var(--serif);font-weight:900;font-size:clamp(30px,3.4vw,44px);color:var(--brown);line-height:1.15}
+.stat .num small{font-size:.5em;font-weight:600;color:var(--gold)}
+.stat .label{color:var(--muted);font-size:13px;letter-spacing:.2em;margin-top:10px}
+
+/* ============ 五大支柱 ============ */
+.pillars{background:var(--ink);position:relative;overflow:hidden}
+.pillars::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(201,160,80,.13),transparent 55%)}
+.pillars .sec-head h2{color:#F2E9CF}
+.pillars .sec-head .sub{color:rgba(242,233,207,.5)}
+.pillars .eyebrow{color:var(--gold-2)}
+.pillars-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.pcard{background:rgba(242,233,207,.05);border:1px solid rgba(242,233,207,.13);border-radius:8px;overflow:hidden;transition:all .35s ease;display:flex;flex-direction:column}
+.pcard:hover{transform:translateY(-8px);border-color:var(--gold);background:rgba(242,233,207,.09)}
+.pcard .ph{height:160px;position:relative;overflow:hidden}
+.pcard .ph img{width:100%;height:100%;object-fit:cover;opacity:.5;transition:all .5s ease;filter:sepia(.25)}
+.pcard:hover .ph img{opacity:.72;transform:scale(1.06)}
+.pcard .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,9,3,.1),rgba(23,18,8,.85))}
+.pcard .zh{position:absolute;left:0;right:0;top:24px;z-index:2;text-align:center;font-family:var(--kai);color:#F2E9CF;font-size:24px;letter-spacing:.24em;line-height:1.5}
+.pcard .no{text-align:center;font-family:var(--serif);color:var(--gold);font-size:15px;font-weight:700;letter-spacing:.2em;padding:14px 0 4px}
+.pcard p{color:rgba(242,233,207,.6);font-size:13px;line-height:1.9;text-align:center;padding:0 18px 22px;min-height:86px}
+.value-rows{position:relative;z-index:2;max-width:980px;margin:54px auto 0;display:flex;flex-direction:column;gap:14px}
+.vrow{display:grid;grid-template-columns:74px 190px 1fr;gap:22px;align-items:center;background:rgba(242,233,207,.04);border:1px solid rgba(242,233,207,.12);border-radius:6px;padding:20px 28px;transition:all .3s ease}
+.vrow:hover{border-color:rgba(201,160,80,.6);background:rgba(242,233,207,.07)}
+.vrow .cn{font-family:var(--kai);font-size:34px;color:var(--gold);line-height:1}
+.vrow h4{font-family:var(--serif);color:#F2E9CF;font-size:17px;font-weight:700;letter-spacing:.08em}
+.vrow h4 small{display:block;font-family:var(--sans);font-weight:300;font-size:11.5px;color:rgba(242,233,207,.45);letter-spacing:.18em;margin-top:4px}
+.vrow p{color:rgba(242,233,207,.62);font-size:13.5px;line-height:1.9}
+.vrow p b{color:var(--gold-2);font-weight:600}
+
+/* ============ 意义·愿景·口号 ============ */
+.creed{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.creed-visual{position:relative;border-radius:8px;overflow:hidden;box-shadow:var(--shadow-lg)}
+.creed-visual img{width:100%;height:430px;object-fit:cover}
+.creed-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(13,9,3,.6))}
+.creed-visual .cap{position:absolute;left:24px;bottom:20px;z-index:2;color:#F2E9CF;font-family:var(--serif);font-size:14px;letter-spacing:.2em}
+.creed-copy .item{border-left:3px solid var(--gold);padding:4px 0 4px 20px;margin-bottom:18px}
+.creed-copy .item h4{font-family:var(--serif);color:var(--brown);font-size:13px;letter-spacing:.3em;font-weight:700;margin-bottom:6px}
+.creed-copy .item p{font-family:var(--serif);color:var(--ink);font-size:16.5px;font-weight:600;line-height:2;letter-spacing:.04em}
+.creed-copy .item p em{font-style:normal;color:var(--brown)}
+.creed-slogan{margin-top:28px;background:var(--ink);color:var(--gold-3);border-radius:8px;padding:30px 34px;text-align:center;position:relative;overflow:hidden}
+.creed-slogan::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 130%,rgba(201,160,80,.25),transparent 60%)}
+.creed-slogan .lab{font-size:11.5px;letter-spacing:.4em;color:rgba(242,233,207,.55)}
+.creed-slogan .slog{font-family:var(--kai);font-size:clamp(26px,3vw,38px);letter-spacing:.22em;margin-top:8px;position:relative;z-index:2}
+
+/* ============ 内容规划 ============ */
+.plan-table{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:rgba(255,252,242,.6)}
+.plan-table .pt-head{display:grid;grid-template-columns:150px 1fr 130px;background:var(--ink);color:var(--gold-2);font-family:var(--serif);font-size:13px;letter-spacing:.24em;font-weight:700}
+.plan-table .pt-head div{padding:14px 22px}
+.plan-row{display:grid;grid-template-columns:150px 1fr 130px;border-bottom:1px solid var(--line);align-items:center}
+.plan-row:last-child{border-bottom:none}
+.plan-row:hover{background:rgba(255,252,242,.85)}
+.plan-row .t{padding:13px 22px;color:var(--brown);font-family:var(--serif);font-size:13.5px;font-weight:700;letter-spacing:.1em}
+.plan-row .n{padding:13px 22px;color:var(--ink);font-size:14.5px}
+.plan-row .n small{color:var(--muted);font-size:12.5px;margin-left:6px}
+.plan-row .s{padding:13px 22px;text-align:center}
+.st{display:inline-block;font-size:12px;letter-spacing:.14em;padding:4px 14px;border-radius:999px;font-weight:600}
+.st.done{background:rgba(122,91,46,.14);color:var(--brown)}
+.st.doing{background:var(--ink);color:var(--gold-2)}
+.st.plan{border:1px dashed var(--line);color:var(--muted)}
+.cities{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:20px;margin-top:56px}
+.city-card{background:rgba(255,252,242,.6);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:all .35s ease;display:flex;flex-direction:column}
+.city-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--gold)}
+.city-card .cimg{height:150px;overflow:hidden;position:relative}
+.city-card .cimg img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.city-card .cimg.art{background:var(--ink);display:flex;align-items:center;justify-content:center}
+.city-card .cimg.art::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 130%,rgba(201,160,80,.18),transparent 65%)}
+.city-card .cimg.art img{width:auto;height:auto;max-width:80%;max-height:68%;object-fit:contain;position:relative;z-index:1}
+.city-card:hover .cimg img{transform:scale(1.06)}
+.city-card .cimg .badge{position:absolute;left:14px;top:14px;z-index:2;background:rgba(13,9,3,.72);color:var(--gold-2);font-size:11px;letter-spacing:.2em;padding:4px 12px;border-radius:999px}
+.city-card .cbody{padding:22px 24px 26px;flex:1;display:flex;flex-direction:column}
+.city-card h3{font-family:var(--serif);color:var(--ink);font-size:19px;font-weight:700;letter-spacing:.06em}
+.city-card .meta{color:var(--brown);font-size:12px;letter-spacing:.1em;margin:6px 0 10px;font-weight:600}
+.city-card p{color:var(--muted);font-size:13px;line-height:1.9;flex:1}
+.city-card .foot{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);color:var(--brown);font-size:12px;letter-spacing:.08em}
+.matrix{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:56px}
+.mx-card{background:rgba(255,252,242,.6);border:1px solid var(--line);border-radius:6px;padding:24px 18px;text-align:center;transition:all .3s ease}
+.mx-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--gold)}
+.mx-card .ic{font-size:26px}
+.mx-card h4{font-family:var(--serif);color:var(--ink);font-size:15px;font-weight:700;margin:10px 0 6px;letter-spacing:.08em}
+.mx-card p{color:var(--muted);font-size:12px;line-height:1.8}
+.channel-list{margin-top:22px;display:flex;flex-direction:column;gap:12px}
+.ch-row{display:grid;grid-template-columns:170px 1fr;gap:0;background:rgba(255,252,242,.6);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.ch-row .k{background:rgba(122,91,46,.08);color:var(--brown);font-family:var(--serif);font-weight:700;font-size:13.5px;letter-spacing:.14em;display:flex;align-items:center;padding:14px 20px}
+.ch-row .v{padding:14px 20px;color:var(--text);font-size:13.5px}
+.ch-row .v b{color:var(--ink)}
+.ch-row .v .ptag{margin:3px 4px 3px 0}
+
+/* ============ 金句墙 ============ */
+.wall{background:var(--ink);position:relative;overflow:hidden}
+.wall::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 15% 100%,rgba(201,160,80,.13),transparent 55%)}
+.wall .sec-head h2{color:#F2E9CF}
+.wall .eyebrow{color:var(--gold-2)}
+.wall .sec-head .sub{color:rgba(242,233,207,.5)}
+.wall-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.quote-card{background:rgba(242,233,207,.05);border:1px solid rgba(242,233,207,.14);border-radius:6px;padding:28px 22px;transition:all .35s ease;position:relative}
+.quote-card::before{content:"“";position:absolute;left:14px;top:2px;font-family:var(--serif);font-size:44px;color:rgba(201,160,80,.35);line-height:1}
+.quote-card:hover{transform:translateY(-5px);border-color:var(--gold);background:rgba(242,233,207,.09)}
+.quote-card p{font-family:var(--serif);color:#F2E9CF;font-size:15.5px;line-height:2;letter-spacing:.08em;position:relative;z-index:2}
+
+/* ============ 资产盘点 ============ */
+.asset-wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.asset-table{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:rgba(255,252,242,.6)}
+.asset-table .at-head,.asset-row{display:grid;grid-template-columns:130px 1fr 110px}
+.asset-table .at-head{background:var(--ink);color:var(--gold-2);font-family:var(--serif);font-size:12.5px;letter-spacing:.22em;font-weight:700}
+.asset-table .at-head div{padding:13px 18px}
+.asset-row{border-bottom:1px solid var(--line);align-items:center}
+.asset-row:last-child{border-bottom:none}
+.asset-row .t{padding:12px 18px;color:var(--brown);font-size:13px;font-weight:600}
+.asset-row .n{padding:12px 18px;color:var(--ink);font-size:13.5px}
+.asset-row .s{padding:12px 18px;text-align:center}
+.asset-note{margin-top:16px;background:rgba(122,91,46,.08);border:1px dashed var(--line);border-radius:6px;padding:16px 20px;color:var(--brown);font-size:13px;line-height:1.9}
+.logo-family{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.lf-card{background:var(--ink);border-radius:8px;overflow:hidden;position:relative;transition:all .35s ease}
+.lf-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+.lf-card img{width:100%;height:120px;object-fit:contain;object-position:center;padding:10px;opacity:.95}
+.lf-card .lb{position:absolute;left:12px;bottom:10px;color:rgba(242,233,207,.85);font-size:12px;letter-spacing:.2em}
+.lf-cap{text-align:center;color:var(--muted);font-size:13px;letter-spacing:.16em;margin-top:16px;font-family:var(--serif)}
+
+/* ============ 授权体系 ============ */
+.auth-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.auth-card{background:rgba(255,252,242,.6);border:1px solid var(--line);border-radius:6px;padding:26px 18px;text-align:center;transition:all .3s ease}
+.auth-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--gold)}
+.auth-card .ic{font-size:26px}
+.auth-card h4{font-family:var(--serif);color:var(--ink);font-size:15.5px;font-weight:700;margin:10px 0 8px;letter-spacing:.06em}
+.auth-card p{color:var(--muted);font-size:12px;line-height:1.8}
+.auth-detail{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:52px}
+.ad-card{background:rgba(255,252,242,.6);border:1px solid var(--line);border-radius:8px;padding:34px 34px 28px;transition:all .35s ease}
+.ad-card:hover{box-shadow:var(--shadow);border-color:var(--gold)}
+.ad-card>h3{font-family:var(--serif);color:var(--ink);font-size:20px;font-weight:700;letter-spacing:.08em;display:flex;align-items:center;gap:12px}
+.ad-card>h3 .bd{width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--gold-2);display:flex;align-items:center;justify-content:center;font-size:19px;flex:none}
+.ad-card .cap{color:var(--brown);font-size:13px;margin:8px 0 18px;letter-spacing:.04em;font-weight:600}
+.ad-card ul li{position:relative;padding:9px 0 9px 22px;color:var(--text);font-size:13.5px;line-height:1.85;border-bottom:1px dashed var(--line)}
+.ad-card ul li:last-child{border-bottom:none}
+.ad-card ul li::before{content:"";position:absolute;left:2px;top:19px;width:7px;height:7px;border:1px solid var(--gold);transform:rotate(45deg)}
+.ad-card ul li b{color:var(--ink)}
+.ad-card .foot-note{margin-top:14px;padding:12px 16px;background:rgba(122,91,46,.08);border-radius:4px;color:var(--brown);font-size:12.5px;line-height:1.9}
+.pack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:52px}
+.pack-card{background:var(--ink);border:1px solid rgba(242,233,207,.14);border-radius:8px;padding:28px 24px;color:rgba(242,233,207,.72);transition:all .35s ease;position:relative;overflow:hidden}
+.pack-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),transparent);opacity:.7}
+.pack-card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.pack-card .no{font-family:var(--serif);color:var(--gold);font-size:12px;letter-spacing:.3em;font-weight:700}
+.pack-card h4{font-family:var(--serif);color:#F2E9CF;font-size:17px;font-weight:700;margin:8px 0 10px;letter-spacing:.06em}
+.pack-card p{font-size:12.5px;line-height:1.9}
+.pack-card p b{color:var(--gold-2);font-weight:600}
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:52px}
+.flow-card{background:rgba(255,252,242,.6);border:1px solid var(--line);border-radius:8px;padding:28px 26px;transition:all .35s ease;position:relative}
+.flow-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--gold)}
+.flow-card .fn{font-family:var(--serif);font-size:34px;font-weight:900;color:rgba(201,160,80,.4);line-height:1}
+.flow-card h4{font-family:var(--serif);color:var(--ink);font-size:17px;font-weight:700;margin:8px 0 12px;letter-spacing:.1em}
+.flow-card ol{padding-left:0;list-style:none;counter-reset:fli}
+.flow-card ol li{position:relative;padding:5px 0 5px 26px;color:var(--text);font-size:13px;line-height:1.8}
+.flow-card ol li::before{counter-increment:fli;content:counter(fli);position:absolute;left:0;top:7px;width:17px;height:17px;border-radius:50%;background:var(--ink);color:var(--gold-2);font-size:10px;display:flex;align-items:center;justify-content:center;font-family:var(--sans)}
+.flow-card ol li b{color:var(--brown)}
+
+/* ============ 京东合作 ============ */
+.jd{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%);position:relative;overflow:hidden}
+.jd::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(201,160,80,.14),transparent 55%)}
+.jd .sec-head h2{color:#F2E9CF}
+.jd .eyebrow{color:var(--gold-2)}
+.jd .sec-head .sub{color:rgba(242,233,207,.5)}
+.jd-loop{position:relative;z-index:2;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:52px}
+.jd-loop .node{background:rgba(242,233,207,.07);border:1px solid rgba(242,233,207,.2);border-radius:999px;padding:12px 26px;color:#F2E9CF;font-family:var(--serif);font-size:14.5px;letter-spacing:.08em}
+.jd-loop .node.hot{background:linear-gradient(135deg,#C9A050,#B98D3E);color:#1B1509;font-weight:700;border-color:transparent}
+.jd-loop .arr{color:var(--gold);font-size:20px}
+.jd-slogan{text-align:center;font-family:var(--kai);color:var(--gold-2);font-size:clamp(24px,2.8vw,34px);letter-spacing:.3em;margin-bottom:44px;position:relative;z-index:2}
+.jd-cols{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:52px}
+.jd-col{background:rgba(242,233,207,.05);border:1px solid rgba(242,233,207,.15);border-radius:8px;padding:32px 34px;transition:all .3s ease}
+.jd-col:hover{border-color:rgba(201,160,80,.6)}
+.jd-col h3{font-family:var(--serif);color:var(--gold-2);font-size:19px;font-weight:700;letter-spacing:.1em;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.jd-col h3 .dm{width:10px;height:10px;background:var(--gold);transform:rotate(45deg)}
+.jd-col ul li{position:relative;padding:8px 0 8px 20px;color:rgba(242,233,207,.7);font-size:13.5px;line-height:1.85;border-bottom:1px dashed rgba(242,233,207,.1)}
+.jd-col ul li:last-child{border-bottom:none}
+.jd-col ul li::before{content:"";position:absolute;left:0;top:18px;width:7px;height:7px;border:1px solid var(--gold);transform:rotate(45deg)}
+.jd-products{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:52px}
+.jdp{background:rgba(242,233,207,.05);border:1px solid rgba(242,233,207,.14);border-radius:8px;overflow:hidden;transition:all .35s ease;display:flex;flex-direction:column}
+.jdp:hover{transform:translateY(-6px);border-color:var(--gold)}
+.jdp .pimg{height:160px;overflow:hidden}
+.jdp .pimg img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.jdp:hover .pimg img{transform:scale(1.06)}
+.jdp .pb{padding:20px 22px 24px;flex:1;display:flex;flex-direction:column}
+.jdp h4{font-family:var(--serif);color:#F2E9CF;font-size:16px;font-weight:700;letter-spacing:.05em}
+.jdp p{color:rgba(242,233,207,.6);font-size:12.5px;line-height:1.85;margin-top:8px;flex:1}
+.gov{position:relative;z-index:2;background:rgba(242,233,207,.05);border:1px solid rgba(242,233,207,.15);border-radius:10px;padding:40px 44px}
+.gov h3{font-family:var(--serif);color:var(--gold-2);font-size:20px;font-weight:700;letter-spacing:.1em;margin-bottom:6px}
+.gov .gcap{color:rgba(242,233,207,.55);font-size:13px;margin-bottom:24px}
+.gov-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gov-item{background:rgba(23,18,8,.45);border:1px solid rgba(242,233,207,.12);border-radius:6px;padding:20px 18px;text-align:center}
+.gov-item .who{color:var(--gold-2);font-size:12.5px;letter-spacing:.14em;font-weight:600}
+.gov-item .val{color:#F2E9CF;font-family:var(--serif);font-size:15px;font-weight:700;margin-top:8px}
+.gov-foot{margin-top:24px;padding-top:20px;border-top:1px dashed rgba(201,160,80,.3);display:flex;flex-wrap:wrap;gap:10px}
+.gov-foot span{font-size:12.5px;color:rgba(240,226,188,.85);border:1px solid rgba(201,160,80,.4);padding:6px 16px;border-radius:999px;letter-spacing:.1em}
+
+/* ============ 页脚 ============ */
+.contact{background:#0D0A05;color:#F2E9CF;text-align:center;padding:120px 0 60px;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:url(assets/lanterns.jpg) center/cover no-repeat;opacity:.16}
+.contact-inner{position:relative;z-index:2}
+.contact h2{font-family:var(--serif);font-weight:900;font-size:clamp(26px,3.2vw,40px);letter-spacing:.12em}
+.contact h2 em{font-style:normal;color:var(--gold)}
+.contact p{color:rgba(242,233,207,.6);font-size:15px;margin-top:18px;letter-spacing:.1em;font-weight:300}
+.contact .tel-line{margin-top:26px;font-size:15px;display:flex;flex-direction:column;gap:8px;align-items:center}
+.contact .tel-line .tel{color:var(--gold);font-family:var(--serif);font-weight:700;font-size:clamp(20px,2.4vw,26px);letter-spacing:.14em;transition:color .3s}
+.contact .tel-line .mail{color:rgba(242,233,207,.85);letter-spacing:.18em;font-size:14.5px}
+.contact .tel-line .tel:hover{color:var(--gold-3)}
+.contact .hero-actions{margin-top:44px}
+.footer{position:relative;z-index:2;margin-top:90px;padding-top:30px;border-top:1px solid rgba(242,233,207,.14);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;text-align:left}
+.footer .fb{display:flex;align-items:center;gap:12px}
+.footer .fmark{width:38px;height:38px;border-radius:8px;background:linear-gradient(135deg,#C9A050,#9C7731);color:#171208;font-family:var(--kai);font-size:22px;display:flex;align-items:center;justify-content:center}
+.footer .fb b{font-family:var(--serif);font-size:15px;letter-spacing:.2em;display:block;color:#F2E9CF}
+.footer .fb em{font-style:normal;font-size:10px;color:var(--gold-2);letter-spacing:.28em}
+.footer p{font-size:12px;color:rgba(242,233,207,.4);letter-spacing:.1em}
+.totop{position:fixed;right:26px;bottom:26px;z-index:90;width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--gold-2);border:1px solid rgba(201,160,80,.5);display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;opacity:0;pointer-events:none;transition:all .3s ease}
+.totop.show{opacity:1;pointer-events:auto}
+.totop:hover{background:var(--gold);color:#171208}
+
+/* ============ 动画 ============ */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+  .kw-grid,.aud-grid{grid-template-columns:repeat(2,1fr)}
+  .pillars-grid{grid-template-columns:repeat(3,1fr)}
+  .matrix,.auth-grid{grid-template-columns:repeat(3,1fr)}
+  .cities{grid-template-columns:repeat(2,1fr)}
+  .wall-grid,.pack-grid,.flow-grid,.jd-products,.gov-grid{grid-template-columns:repeat(2,1fr)}
+  .city-cases,.creed,.auth-detail,.asset-wrap,.jd-cols{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:150px 1fr;gap:36px}
+  .vblock{font-size:34px}
+  .logo-family{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:720px){
+  .sec{padding:72px 0}
+  .menu{position:fixed;top:70px;right:0;left:0;background:rgba(18,13,5,.98);flex-direction:column;padding:26px 0 34px;gap:18px;transform:translateY(-140%);transition:transform .4s ease;border-bottom:1px solid rgba(201,160,80,.3)}
+  .menu.open{transform:translateY(0)}
+  .hamburger{display:flex}
+  .about-grid{grid-template-columns:1fr}
+  .vblock{writing-mode:horizontal-tb;font-size:28px;justify-content:center;gap:14px;padding:22px}
+  .vblock::after{writing-mode:horizontal-tb;margin:0}
+  .pillars-grid{grid-template-columns:repeat(2,1fr)}
+  .matrix,.auth-grid{grid-template-columns:repeat(2,1fr)}
+  .wall-grid{grid-template-columns:1fr}
+  .cities{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .crew-grid{grid-template-columns:1fr}
+  .profile-row{grid-template-columns:110px 1fr}
+  .plan-table .pt-head,.plan-row{grid-template-columns:90px 1fr 96px}
+  .plan-table .pt-head div,.plan-row .t,.plan-row .n,.plan-row .s{padding:11px 12px;font-size:12.5px}
+  .asset-table .at-head,.asset-row{grid-template-columns:96px 1fr 88px}
+  .asset-table .at-head div,.asset-row .t,.asset-row .n,.asset-row .s{padding:10px 10px;font-size:12px}
+  .ch-row{grid-template-columns:1fr}
+  .vrow{grid-template-columns:56px 1fr;row-gap:6px}
+  .vrow p{grid-column:1/-1}
+  .vf-arrow{display:none}
+  .vf-step{border-radius:8px!important;margin-bottom:10px}
+  .hero-seal,.hero-ver{display:none}
+  .hero-logo{height:min(30vh,220px)}
+  .jd-loop .arr{display:none}
+  .gov{padding:28px 22px}
+  .pack-grid,.flow-grid,.jd-products,.gov-grid{grid-template-columns:1fr}
+  .logo-family{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= 导航 ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="寻味中国 Taste of China">
+      <img class="brand-logo" src="assets/logo-white.png" alt="寻味中国 Taste of China">
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#about" class="active">IP档案</a>
+      <a href="#value">价值主张</a>
+      <a href="#plan">内容规划</a>
+      <a href="#assets">IP资产</a>
+      <a href="#auth">授权体系</a>
+      <a href="#jd">京东合作</a>
+      <a href="#contact" class="btn-nav">合作洽谈</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ================= 首屏 · 封面 ================= -->
+<section class="hero" id="top">
+  <img class="hero-bg" src="assets/hero-bg.jpg" alt="夜市灯火">
+  <div class="hero-veil"></div>
+  <div class="hero-seal">中视泓创 · 荣誉出品</div>
+  <div class="hero-ver">IP商务运营手册<br>版本 V2.0 · 2026年8月</div>
+  <div class="hero-inner">
+    <img class="hero-logo" src="assets/logo.png" alt="寻味中国 Taste of China">
+    <div class="hero-eyebrow">国家级美食文化 IP</div>
+    <h1 class="hero-title">食物是文化的载体 · 味道是记忆的纽带</h1>
+    <div class="hero-sub">以文化自信为根基 · 以 IP 即民生为核心 · 共创「文化 + 消费」双赢格局</div>
+    <div class="hero-tags">
+      <span>总台</span><span>腾讯视频</span><span>华为生态</span><span>中国航空</span><span>京东生鲜 · 战略电商伙伴</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#auth" class="btn btn-gold">查看授权体系</a>
+      <a href="#about" class="btn btn-line">了解寻味中国</a>
+    </div>
+  </div>
+  <div class="hero-more"><span></span></div>
+</section>
+
+<div class="motto">深入中国各地 · 探寻美食背后的故事、<b>文化传承与人文情感</b></div>
+
+<!-- ================= 第一章 · IP档案 ================= -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="chap">第一章</span>
+      <div class="eyebrow">IP PROFILE</div>
+      <h2>中国顶级美食文化<span class="gm">IP档案</span></h2>
+      <div class="sub">以「美食」为纽带的人文纪录片品牌，通过镜头记录中国各地美食及其背后的文化故事</div>
+      <span class="en">Brand Identity</span>
+    </div>
+    <div class="about-grid">
+      <div class="vblock reveal">寻味中国</div>
+      <div class="about-copy reveal d1">
+        <p class="lead">《寻味中国》由<em>陈晓卿</em>担任总导演、陈晓卿团队倾力打造，以<em>文化自信</em>为根基、<em>IP即民生</em>为核心的中国顶级美食文化IP。</p>
+        <p class="desc">将发展成为涵盖纪录片内容、IP形象、商标标识、社交资产在内的完整知识产权体系。诚邀志同道合的伙伴，共同挖掘中国美食文化的商业价值，共创「文化 + 消费」的双赢格局。</p>
+        <dl class="profile">
+          <div class="profile-row"><dt>品牌名称</dt><dd>寻味中国 <small style="color:var(--muted);font-size:12px">Taste of China</small></dd></div>
+          <div class="profile-row"><dt>出品公司</dt><dd>北京中视泓创国际文化传媒有限公司</dd></div>
+          <div class="profile-row"><dt>总导演</dt><dd>陈晓卿 <small style="color:var(--muted);font-size:12px">《舌尖上的中国》第1-2季、《风味人间》缔造者</small></dd></div>
+          <div class="profile-row"><dt>出品人</dt><dd>张宫 <small style="color:var(--muted);font-size:12px">《舌尖上的中国》系列纪录片IP营销宣推负责人</small></dd></div>
+          <div class="profile-row"><dt>创立时间</dt><dd>2016年 <small style="color:var(--muted);font-size:12px">《寻味顺德》与观众首次见面</small></dd></div>
+          <div class="profile-row"><dt>内容形式</dt><dd><span class="ptag">纪录片</span><span class="ptag">短视频</span><span class="ptag">直播</span><span class="ptag">短剧</span><span class="ptag">图文</span></dd></div>
+          <div class="profile-row"><dt>播出平台</dt><dd><span class="ptag hl">总台</span><span class="ptag hl">腾讯视频</span><span class="ptag">华为生态</span><span class="ptag">中国航空</span></dd></div>
+          <div class="profile-row"><dt>战略电商伙伴</dt><dd><span class="ptag hl">京东生鲜</span> 内容 + 电商一体化深度合作</dd></div>
+        </dl>
+      </div>
+    </div>
+    <div class="kw-grid">
+      <div class="kw-card reveal"><div class="big">烟火气</div><div class="bar"></div><p>真实记录街头巷尾的人间美味，呈现独有的原汁原味</p></div>
+      <div class="kw-card reveal d1"><div class="big">文化感</div><div class="bar"></div><p>挖掘美食背后的历史文脉，每一道菜都是生活哲学的缩影</p></div>
+      <div class="kw-card reveal d2"><div class="big">情感共鸣</div><div class="bar"></div><p>唤醒每个人对家乡味道的记忆，味道是记忆的纽带</p></div>
+      <div class="kw-card reveal d3"><div class="big">从内容到消费</div><div class="bar"></div><p>以内容为引擎、以供应链与电商为载体，实现商业闭环</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 主创阵容 ================= -->
+<section class="sec crew" id="crew">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">MASTERS</span>
+      <h2>制作运营 珠联璧合</h2>
+      <div class="sub">中国美食纪录片领域的品质标杆 · 媒介内容生态的"价值玩家"</div>
+    </div>
+    <div class="crew-grid">
+      <div class="crew-card reveal">
+        <span class="role">《寻味中国》出品人</span>
+        <h3>张 宫</h3>
+        <div class="works">原总台纪录频道全频道商业运营负责人 / 总经理</div>
+        <p>《舌尖上的中国》系列纪录片IP营销宣推负责人，深耕品牌传播与内容营销领域二十余年，具有丰富的内容营销与文化IP运营操盘经验。</p>
+      </div>
+      <div class="crew-card reveal d1">
+        <span class="role">《寻味中国》总导演</span>
+        <h3>陈晓卿</h3>
+        <div class="works">《舌尖上的中国》《风味人间》等现象级缔造者</div>
+        <p>大量优秀作品载入中国电视发展历史，已成为纪录片学科的教科书式范本，被业界誉为"味觉编织者、人间记录家"，是纪录片品质与影响力保证的灵魂人物。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 核心人群 ================= -->
+<section class="sec" id="audience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">AUDIENCE</span>
+      <h2>核心受众<span class="gm">画像</span></h2>
+      <div class="sub">高粘性、高消费力、高文化认同的美食消费人群</div>
+    </div>
+    <div class="aud-grid">
+      <div class="aud-card reveal" data-no="01"><div class="ic">🍽️</div><h3>核心人群</h3><p>25-50岁美食爱好者</p><small>注重生活品质与文化内涵</small></div>
+      <div class="aud-card reveal d1" data-no="02"><div class="ic">🌏</div><h3>地域分布</h3><p>一二线城市为主</p><small>辐射全国 · 覆盖海外华人群体</small></div>
+      <div class="aud-card reveal d2" data-no="03"><div class="ic">💎</div><h3>消费特征</h3><p>愿意为品质付费</p><small>追求文化消费体验 · 注重品牌调性</small></div>
+      <div class="aud-card reveal d3" data-no="04"><div class="ic">🏷️</div><h3>兴趣标签</h3>
+        <div class="tags"><span>美食</span><span>旅行</span><span>烹饪</span><span>文化</span><span>生活方式</span><span>科技新品</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 第二章 · 价值主张 ================= -->
+<section class="sec" id="value">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="chap">第二章</span>
+      <div class="eyebrow">VALUE PROPOSITION</div>
+      <h2>从功能消费 到<span class="gm">「文化 + 消费」</span></h2>
+      <div class="sub">从"功能消费"到"文化消费"，再到"文化 + 供应链 + 电商"三位一体消费</div>
+      <span class="en">Value Proposition</span>
+    </div>
+    <div class="value-flow reveal">
+      <div class="vf-step"><div class="no">STAGE 01</div><h3>功能消费</h3><p>吃得饱、吃得好——产品功能的原始需求</p></div>
+      <div class="vf-arrow">➜</div>
+      <div class="vf-step"><div class="no">STAGE 02</div><h3>文化消费</h3><p>为文化认同与情感共鸣付费——IP价值入局</p></div>
+      <div class="vf-arrow">➜</div>
+      <div class="vf-step"><div class="no">STAGE 03</div><h3>三位一体</h3><p>文化 + 供应链 + 电商一体化——以"文化自信"为根基、以"IP即民生"为核心</p></div>
+    </div>
+
+    <div class="city-cases">
+      <div class="cc-card reveal">
+        <img src="assets/hotpot.jpg" alt="重庆火锅IP">
+        <div class="cc-body">
+          <span class="tag">城市 IP 样本 · 壹</span>
+          <h3>重庆「火锅IP」</h3>
+          <div class="num">2470<small> 亿元</small></div>
+          <p>火锅IP餐饮营收已达2470亿元，居全国首位——顶级文化IP重塑城市民生底色</p>
+        </div>
+      </div>
+      <div class="cc-card reveal d1">
+        <img src="assets/soup-leshan.jpg" alt="乐山跷脚牛肉">
+        <div class="cc-body">
+          <span class="tag">城市 IP 样本 · 贰</span>
+          <h3>乐山跷脚牛肉</h3>
+          <div class="num">300<small> 亿+</small></div>
+          <p>《舌尖》播出当年旅游收入破300亿，老字号日均客流翻5倍——一部纪录片改变一座城</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-title reveal">《寻味顺德》第一季 · <span>一部纪录片改变一座城</span></div>
+    <div class="stats-grid">
+      <div class="stat reveal"><div class="num"><span class="counter" data-target="50">0</span><small>亿+ 人次</small></div><div class="label">全网覆盖</div></div>
+      <div class="stat reveal d1"><div class="num"><span class="counter" data-target="9" data-decimal="1">0</span><small>分</small></div><div class="label">口碑评分 · 豆瓣</div></div>
+      <div class="stat reveal d2"><div class="num"><span class="counter" data-target="600">0</span><small>+ 次</small></div><div class="label">央视重播</div></div>
+      <div class="stat reveal"><div class="num">6000<small> → 近4万家</small></div><div class="label">餐饮企业增长</div></div>
+      <div class="stat reveal d1"><div class="num"><span class="counter" data-target="10">0</span><small>万+</small></div><div class="label">带动就业</div></div>
+      <div class="stat reveal d2"><div class="num"><span class="counter" data-target="17.3" data-decimal="1">0</span><small>亿元</small></div><div class="label">春节单周旅游收入</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 五大价值支柱 ================= -->
+<section class="sec pillars" id="pillars">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">FIVE PILLARS</span>
+      <h2>《寻味中国》五大价值支柱</h2>
+      <div class="sub">从带火一座城，到赋能千万民生</div>
+    </div>
+    <div class="pillars-grid">
+      <div class="pcard reveal">
+        <div class="ph"><img src="assets/chef-wok.jpg" alt="顶配团队"><div class="zh">顶配<br>团队</div></div>
+        <div class="no">01</div>
+        <p>陈晓卿总导演及陈晓卿团队，中国美食纪录片第一阵容</p>
+      </div>
+      <div class="pcard reveal d1">
+        <div class="ph"><img src="assets/globe.jpg" alt="全球视野"><div class="zh">全球<br>视野</div></div>
+        <div class="no">02</div>
+        <p>三分之一海外拍摄，文化出海先锋</p>
+      </div>
+      <div class="pcard reveal d2">
+        <div class="ph"><img src="assets/city-night.jpg" alt="城市赋能"><div class="zh">城市<br>赋能</div></div>
+        <div class="no">03</div>
+        <p>从带火一座城，到赋能千万民生</p>
+      </div>
+      <div class="pcard reveal d3">
+        <div class="ph"><img src="assets/camera-dark.jpg" alt="AI+美食"><div class="zh">AI+<br>美食</div></div>
+        <div class="no">04</div>
+        <p>科技赋能，传统与未来交汇</p>
+      </div>
+      <div class="pcard reveal d3">
+        <div class="ph"><img src="assets/street-bbq.jpg" alt="全民互动"><div class="zh">全民<br>互动</div></div>
+        <div class="no">05</div>
+        <p>不再只是"看"，而是"玩起来""买得到"</p>
+      </div>
+    </div>
+    <div class="value-rows">
+      <div class="vrow reveal"><span class="cn">壹</span><h4>顶配团队<small>重新定义内容价值</small></h4><p>与"梦之队"合作获得<b>品质背书</b>；品牌融入美食叙事，收获<b>人文赋能</b>与深厚情感共鸣；携手行业顶尖团队，有力塑造<b>高端市场占位</b>。</p></div>
+      <div class="vrow reveal"><span class="cn">贰</span><h4>全球视野<small>重新定义国际传播价值</small></h4><p>文化出海国家战略："<b>总台+腾讯视频+华为生态+国航</b>"形成国内+海外双轨矩阵。1/3海外拍摄，跟随顺德味道的全球迁徙，记录中餐在海外的守正创新。</p></div>
+      <div class="vrow reveal"><span class="cn">叁</span><h4>城市赋能<small>重新定义社会价值</small></h4><p>以《寻味顺德》为鉴，顶级文化IP能从<b>产业重塑、文化重塑、民生重塑</b>三个维度为区域经济注入可持续的内生动力。超越媒体投放，与城市超级IP深度绑定，共享"带火一座城"势能。</p></div>
+      <div class="vrow reveal"><span class="cn">肆</span><h4>AI+美食<small>重新定义技术创新价值</small></h4><p>首次将AI系统融入美食纪录片制作：<b>AI智能视觉呈现</b>（沉浸式食材处理）、<b>机器人厨师</b>全流程烹饪、<b>智能厨电</b>场景化展示，彰显科技高端调性。</p></div>
+      <div class="vrow reveal"><span class="cn">伍</span><h4>全民互动<small>重新定义传播玩法</small></h4><p>六大玩法全线贯穿：<b>寻味直达、寻味生态、AI寻味、寻味短剧、寻味传承、寻味直播</b>——让品牌从"广告展示者"转型为"体验创造者"与"价值提供者"。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 意义 · 愿景 · 口号 ================= -->
+<section class="sec" id="creed">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">MISSION &amp; VISION</span>
+      <h2>让食物，成为人与城市的<span class="gm">情感契约</span></h2>
+      <div class="sub">一饭一蔬皆有来处，一城一味皆见人心</div>
+    </div>
+    <div class="creed">
+      <div class="creed-visual reveal">
+        <img src="assets/scroll.jpg" alt="寻味中国卷轴书法">
+        <div class="cap">「寻味中国」IP 书法视觉</div>
+      </div>
+      <div class="creed-copy reveal d1">
+        <div class="item"><h4>IP 意义</h4><p>让离开家乡的人，<em>吃得出回家的味道</em><br>让来到城市的人，吃得懂这座城的性格<br>让生活在这里的人，吃得见自己的根<br>让镜头里的美味，走进千家万户的餐桌</p></div>
+        <div class="item"><h4>IP 愿景</h4><p>成为<em>中国最具城市文化洞察力</em>的美食IP</p></div>
+        <div class="creed-slogan">
+          <div class="lab">IP 口号</div>
+          <div class="slog">吃懂一座城 · 吃出归属感</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 第三章 · 内容规划 ================= -->
+<section class="sec" id="plan">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="chap">第三章</span>
+      <div class="eyebrow">CONTENT ROADMAP</div>
+      <h2>IP内容<span class="gm">发展规划</span></h2>
+      <div class="sub">从一部纪录片，到一个完整的内容产品矩阵</div>
+      <span class="en">Content Roadmap</span>
+    </div>
+    <div class="plan-table reveal">
+      <div class="pt-head"><div>类型</div><div>项目</div><div style="text-align:center">状态</div></div>
+      <div class="plan-row"><div class="t">纪录片</div><div class="n">《寻味顺德》</div><div class="s"><span class="st done">已完成</span></div></div>
+      <div class="plan-row"><div class="t">纪录片</div><div class="n">《寻味中国·顺德》<small>暨《寻味顺德》第二季</small></div><div class="s"><span class="st doing">拍摄中</span></div></div>
+      <div class="plan-row"><div class="t">纪录片</div><div class="n">《寻味中国·北京》《寻味中国·清远》《寻味中国·长沙》</div><div class="s"><span class="st plan">筹备中</span></div></div>
+      <div class="plan-row"><div class="t">图书</div><div class="n">系列书籍出版</div><div class="s"><span class="st plan">筹备中</span></div></div>
+      <div class="plan-row"><div class="t">纪录电影</div><div class="n">IP衍生电影</div><div class="s"><span class="st plan">筹备中</span></div></div>
+      <div class="plan-row"><div class="t">数字产品</div><div class="n">APP · 小程序 · 表情包</div><div class="s"><span class="st plan">筹备中</span></div></div>
+      <div class="plan-row"><div class="t">IP形象</div><div class="n">原创形象设计</div><div class="s"><span class="st plan">筹备中</span></div></div>
+    </div>
+
+    <div class="cities">
+      <div class="city-card reveal">
+        <div class="cimg"><img src="assets/dimsum.jpg" alt="寻味中国·顺德"><span class="badge">拍摄中</span></div>
+        <div class="cbody">
+          <h3>《寻味中国·顺德》</h3>
+          <div class="meta">暨《寻味顺德》第二季 · 6集 × 25分钟</div>
+          <p>解码顺德人与美食的深层羁绊，展现岭南地域资源禀赋，探寻顺德风味的海内外流变。</p>
+          <div class="foot">拟定播出：总台 + 腾讯视频<br>宣发：CGTN + 视频平台 + 社交媒体</div>
+        </div>
+      </div>
+      <div class="city-card reveal d1">
+        <div class="cimg art"><img src="assets/city-cs.png" alt="寻味中国·长沙"><span class="badge">筹备中</span></div>
+        <div class="cbody">
+          <h3>《寻味中国·长沙》</h3>
+          <div class="meta">华中头部美食文化IP</div>
+          <p>以火辣湘味、市井江湖、近代移民饮食、湘菜全产业链为核心，填补国家级长纪录片对长沙完整味觉叙事的空白。</p>
+        </div>
+      </div>
+      <div class="city-card reveal d2">
+        <div class="cimg art"><img src="assets/city-qy.png" alt="寻味中国·清远"><span class="badge">筹备中</span></div>
+        <div class="cbody">
+          <h3>《寻味中国·清远》</h3>
+          <div class="meta">全国食材原产地标杆IP</div>
+          <p>以大湾区生态食材源头、清远鸡全产业链、粤北山地客家风味、广清食材供给枢纽为核心。</p>
+        </div>
+      </div>
+      <div class="city-card reveal d3">
+        <div class="cimg art"><img src="assets/city-bj.png" alt="寻味中国·北京"><span class="badge">筹备中</span></div>
+        <div class="cbody">
+          <h3>《寻味中国·北京》</h3>
+          <div class="meta">千年古都的饮食文明</div>
+          <p>以京味美食为核心载体，深度挖掘宫廷饮食与市井烟火的交融脉络、北方水土的物产禀赋、老北京饮食习俗的传承与创新。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-title reveal" style="margin-top:72px">衍生品矩阵 · <span>五大价值出口</span></div>
+    <div class="matrix">
+      <div class="mx-card reveal"><div class="ic">🥬</div><h4>消费品领域</h4><p>食材、饮料等实物类消费品</p></div>
+      <div class="mx-card reveal d1"><div class="ic">🎁</div><h4>衍生品矩阵</h4><p>文创产品、节日礼盒等产品</p></div>
+      <div class="mx-card reveal d2"><div class="ic">🏛️</div><h4>场景联动</h4><p>线下活动、展会活动、文旅场景</p></div>
+      <div class="mx-card reveal d3"><div class="ic">📱</div><h4>数字场景</h4><p>短视频、直播、短剧、音频类</p></div>
+      <div class="mx-card reveal d3"><div class="ic">🤝</div><h4>政企合作</h4><p>文旅 + 美食、农产品上行</p></div>
+    </div>
+
+    <div class="stats-title reveal" style="margin-top:72px">渠道矩阵 · <span>全域传播与销售通路</span></div>
+    <div class="channel-list reveal">
+      <div class="ch-row"><div class="k">媒体渠道</div><div class="v"><b>央视、腾讯、新华等</b>（播出平台 + 媒体宣发平台）</div></div>
+      <div class="ch-row"><div class="k">自媒体渠道</div><div class="v">寻味IP全平台官方账号；KOC账号矩阵（出品人、特邀寻味官等）</div></div>
+      <div class="ch-row"><div class="k">电商平台</div><div class="v"><span class="ptag hl">京东「寻味中国旗舰店」</span><span class="ptag">京东生鲜专题页</span><span class="ptag">直播间挂载</span></div></div>
+      <div class="ch-row"><div class="k">线下场景</div><div class="v">糖酒会、广告节、国际品牌周等；下沉城市美食IP节庆 + 溯源展销、线下体验区</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 金句墙 ================= -->
+<section class="sec wall" id="wall">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">TASTE QUOTES</span>
+      <h2>寻味金句 · 生活的仪式</h2>
+      <div class="sub">吃饭从不是简单果腹，是流淌在日常里的生活仪式</div>
+    </div>
+    <div class="wall-grid">
+      <div class="quote-card reveal"><p>为一道菜，赴一座城</p></div>
+      <div class="quote-card reveal d1"><p>一城烟火百味，半盏顺德人间</p></div>
+      <div class="quote-card reveal d2"><p>有米不见米，只取米精华</p></div>
+      <div class="quote-card reveal d3"><p>五味周全、六艺领先，饮和食德</p></div>
+      <div class="quote-card reveal"><p>水乡出好物，火候出佳肴</p></div>
+      <div class="quote-card reveal d1"><p>食物串联起一城的岁月变迁</p></div>
+      <div class="quote-card reveal d2"><p>真正的美食从不需要星级标签加持</p></div>
+      <div class="quote-card reveal d3"><p>吃饭从不是简单果腹，是流淌在日常里的生活仪式</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 第四章 · IP资产 ================= -->
+<section class="sec" id="assets">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="chap">第四章</span>
+      <div class="eyebrow">IP ASSETS</div>
+      <h2>知识产权<span class="gm">资产盘点</span></h2>
+      <div class="sub">从标识图形到供应链标准，构建完整的知识产权体系</div>
+      <span class="en">Intellectual Property Assets</span>
+    </div>
+    <div class="asset-wrap">
+      <div class="reveal">
+        <div class="asset-table">
+          <div class="at-head"><div>资产类型</div><div>名称</div><div style="text-align:center">状态</div></div>
+          <div class="asset-row"><div class="t">标识图形</div><div class="n">"寻味中国"文字系列图形</div><div class="s"><span class="st done">已有</span></div></div>
+          <div class="asset-row"><div class="t">纪录片版权</div><div class="n">全系列内容</div><div class="s"><span class="st done">已有</span></div></div>
+          <div class="asset-row"><div class="t">原创音乐</div><div class="n">片头曲、背景音乐等</div><div class="s"><span class="st done">已有</span></div></div>
+          <div class="asset-row"><div class="t">解说词</div><div class="n">原创文案</div><div class="s"><span class="st done">已有</span></div></div>
+          <div class="asset-row"><div class="t">纪录片视觉</div><div class="n">片名文字视觉</div><div class="s"><span class="st plan">设计中</span></div></div>
+          <div class="asset-row"><div class="t">专属字体</div><div class="n">寻味体</div><div class="s"><span class="st plan">设计中</span></div></div>
+          <div class="asset-row"><div class="t">IP形象</div><div class="n">原创形象</div><div class="s"><span class="st plan">筹备中</span></div></div>
+          <div class="asset-row"><div class="t">电商资产</div><div class="n">京东"寻味中国旗舰店"</div><div class="s"><span class="st doing">筹建中</span></div></div>
+          <div class="asset-row"><div class="t">供应链资产</div><div class="n">"寻味中国"农产品标准化体系</div><div class="s"><span class="st doing">共建中</span></div></div>
+        </div>
+        <div class="asset-note"><b>供应链资产说明：</b>联合京东生鲜制定"寻味中国"农产品标准化体系——产地标准、品控规范、包装规格。</div>
+      </div>
+      <div class="reveal d1">
+        <div class="logo-family">
+          <div class="lf-card"><img src="assets/logo-gold-cn.png" alt="寻味中国"><span class="lb">寻味中国</span></div>
+          <div class="lf-card"><img src="assets/logo-chengshi.png" alt="寻味城市"><span class="lb">寻味城市</span></div>
+          <div class="lf-card"><img src="assets/logo-yanhuo.png" alt="寻味烟火"><span class="lb">寻味烟火</span></div>
+          <div class="lf-card"><img src="assets/logo-shiji.png" alt="寻味市集"><span class="lb">寻味市集</span></div>
+          <div class="lf-card"><img src="assets/logo-city.png" alt="寻味City"><span class="lb">寻味City</span></div>
+          <div class="lf-card"><img src="assets/logo-world.png" alt="寻味世界"><span class="lb">寻味世界</span></div>
+          <div class="lf-card"><img src="assets/logo-beijing.png" alt="寻味北京"><span class="lb">寻味北京</span></div>
+          <div class="lf-card"><img src="assets/logo.png" alt="寻味中国主标"><span class="lb">主标 · Taste of China</span></div>
+        </div>
+        <div class="lf-cap">「寻味中国」标识图形体系 · 银金橙多色系（示意）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 第五章 · 授权体系 ================= -->
+<section class="sec" id="auth">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="chap">第五章</span>
+      <div class="eyebrow">LICENSING</div>
+      <h2>授权商业<span class="gm">合作体系</span></h2>
+      <div class="sub">五大授权方向，覆盖品牌合作的全部触点</div>
+      <span class="en">Licensing System</span>
+    </div>
+    <div class="auth-grid">
+      <div class="auth-card reveal"><div class="ic">🛒</div><h4>商品IP授权</h4><p>食品饮料 / 餐厨用具 / 文创礼盒 / 农产品 / 预制菜</p></div>
+      <div class="auth-card reveal d1"><div class="ic">🎮</div><h4>数字授权</h4><p>游戏道具、皮肤、表情包、动画、社交媒体、电商平台</p></div>
+      <div class="auth-card reveal d2"><div class="ic">✍️</div><h4>内容创作授权</h4><p>视频、文案、图片、音乐等二次创作或衍生内容开发</p></div>
+      <div class="auth-card reveal d3"><div class="ic">📣</div><h4>营销授权</h4><p>品牌宣传、广告投放、活动策划、联名推广</p></div>
+      <div class="auth-card reveal d3"><div class="ic">🏪</div><h4>空间授权</h4><p>线下实体空间</p></div>
+    </div>
+
+    <div class="auth-detail">
+      <div class="ad-card reveal">
+        <h3><span class="bd">⚖️</span>知识产权权益</h3>
+        <div class="cap">基础IP联名授权模式 · 其他商务合作形式及价格另行商议</div>
+        <ul>
+          <li><b>企业称谓权</b>：授权相关品牌为"寻味中国"优选合作伙伴</li>
+          <li><b>产品称为权</b>：授权相关产品为"寻味中国"品质美食 / 美味 / 产品</li>
+          <li><b>标识使用</b>：可在产品使用"寻味中国"LOGO元素，"寻味中国 × XX牌"标识呈现（占合作产品画面5%-8%比例）</li>
+          <li><b>授权规模</b>：1个SKU / 年，授权产品须为同一品牌的同一品类</li>
+          <li><b>版权归属</b>：根据《中华人民共和国著作权法》，纪录片整体版权及子版权归属中视泓创</li>
+        </ul>
+        <div class="foot-note">权益适用范围：联名图案印刷、联名款产品及包装设计、线上宣传平台、产品宣传物料（产品设计、海报、广告牌等）、线下展位设计、第三方投放渠道。开发运营须严格遵守文化IP资源开发运营要求。</div>
+      </div>
+      <div class="ad-card reveal d1">
+        <h3><span class="bd">📡</span>传播权益</h3>
+        <div class="cap">国家级内容背书 + 全域媒体分发</div>
+        <ul>
+          <li><b>视频制作</b>：定制一条寻味风格商务视频</li>
+          <li><b>短剧共创</b>：寻味系列短剧中融入一条商务内容</li>
+          <li><b>新媒体传播</b>：寻味IP微博 / 小红书 / 视频号（三选一）官方账号转发商务视频1次</li>
+          <li><b>直播</b>：寻味IP抖音官方账号直播1次；微博 / 小红书 / 视频号（三选一）官方账号转播1次</li>
+        </ul>
+        <div style="margin-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <img src="assets/co-brand-food.jpg" alt="联名产品示例" style="border-radius:6px;height:150px;width:100%;object-fit:cover;box-shadow:var(--shadow)">
+          <img src="assets/giftbox.jpg" alt="联名礼盒示例" style="border-radius:6px;height:150px;width:100%;object-fit:cover;box-shadow:var(--shadow)">
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-title reveal" style="margin-top:72px">付费可选权益包 · <span>按需增配</span></div>
+    <div class="pack-grid">
+      <div class="pack-card reveal"><div class="no">PACK 01</div><h4>图库权益</h4><p>寻味相关图库、主KV；可用<b>寻味字体</b>为被授权产品设计宣传语句；<b>寻味金句</b>相关授权。</p></div>
+      <div class="pack-card reveal d1"><div class="no">PACK 02</div><h4>设计服务</h4><p>寻味团队为被授权产品提供<b>设计服务</b>，保障联名品质与调性统一。</p></div>
+      <div class="pack-card reveal d2"><div class="no">PACK 03</div><h4>星图权益</h4><p>定制寻味风格商务视频1条并发布抖音官方账号（制作周期约30天）；多平台官方账号分发（小红书/微博/快手/B站/视频号/公众号推文）。</p></div>
+      <div class="pack-card reveal d3"><div class="no">PACK 04</div><h4>电商权益</h4><p>抖音官方账号橱窗挂车；京东「寻味中国旗舰店」入驻绿色通道；京东生鲜专题页资源位；京东溯源直播联动；京东物流冷链支持。</p></div>
+    </div>
+
+    <div class="stats-title reveal" style="margin-top:72px">合作保障 · <span>四维体系</span></div>
+    <div class="flow-grid">
+      <div class="flow-card reveal"><div class="fn">01</div><h4>合作流程</h4><ol>
+        <li>合作洽谈与需求沟通</li><li>合作方案设计与报价</li><li>商务条款确认</li><li>法务审核与合同签署</li><li>授权物料设计与审核</li><li>产品/内容开发与执行</li><li>营销推广与传播</li><li>效果追踪与复盘</li>
+      </ol></div>
+      <div class="flow-card reveal d1"><div class="fn">02</div><h4>合作节奏</h4><ol>
+        <li>前期洽谈 <b>2-4周</b></li><li>合同签署 <b>1-2周</b></li><li>物料开发 <b>3-6周</b></li><li>产品上市（按项目）</li><li>营销执行（持续）</li><li>效果复盘（每季度）</li>
+      </ol></div>
+      <div class="flow-card reveal d2"><div class="fn">03</div><h4>物料规范</h4><ol>
+        <li>初稿提交：上线前 <b>30天</b></li><li>定稿提交：上线前 <b>15天</b></li><li>终审提交：上线前 <b>7天</b></li>
+      </ol></div>
+      <div class="flow-card reveal d3"><div class="fn">04</div><h4>品控管理</h4><ol>
+        <li><b>准入评估</b>：品牌调性 + 产品品质 + 市场口碑</li><li><b>过程监控</b>：定期抽查授权产品市场表现</li><li><b>退出机制</b>：违规或品质问题触发退出流程</li>
+      </ol></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 第六章 · 京东生鲜战略合作 ================= -->
+<section class="sec jd" id="jd">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="chap">第六章</span>
+      <div class="eyebrow">STRATEGIC PARTNERSHIP</div>
+      <h2>寻味中国 × 京东生鲜</h2>
+      <div class="sub">以《寻味中国》文化IP为内容引擎，以京东生鲜供应链与电商平台为转化载体</div>
+    </div>
+    <div class="jd-loop reveal">
+      <span class="node">美食内容</span><span class="arr">➜</span>
+      <span class="node">农产品标准化</span><span class="arr">➜</span>
+      <span class="node">电商销售</span><span class="arr">➜</span>
+      <span class="node hot">城市赋能</span>
+    </div>
+    <div class="jd-slogan reveal">看 得 到 ➜ 买 得 到</div>
+
+    <div class="jd-cols">
+      <div class="jd-col reveal">
+        <h3><span class="dm"></span>寻味中国优势</h3>
+        <ul>
+          <li>陈晓卿团队顶级内容制作能力</li>
+          <li>城市名片打造、政府资源整合能力</li>
+          <li>国民级全网覆盖影响力</li>
+          <li>美食文化叙事与IP背书能力</li>
+          <li>文旅 + 美食跨界整合能力</li>
+        </ul>
+      </div>
+      <div class="jd-col reveal d1">
+        <h3><span class="dm"></span>京东生鲜优势</h3>
+        <ul>
+          <li>全国领先的生鲜综合电商平台</li>
+          <li>100% 年复合增长率，8000万+ 生鲜用户</li>
+          <li>近7亿京东年度活跃用户</li>
+          <li>全球50+国家及地区直采供应链</li>
+          <li>"211限时达"冷链物流体系</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="reveal" style="position:relative;z-index:2;margin-bottom:52px;border-radius:10px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)">
+      <img src="assets/jd-store.jpg" alt="京东寻味中国旗舰店" style="width:100%;max-height:420px;object-fit:cover;object-position:center top">
+      <div style="position:absolute;left:26px;bottom:20px;color:#F2E9CF;font-family:var(--serif);font-size:14px;letter-spacing:.18em;background:rgba(13,9,3,.55);padding:8px 18px;border-radius:999px">京东「寻味中国旗舰店」 · 看得到的味道，买得到</div>
+    </div>
+
+    <div class="jd-products">
+      <div class="jdp reveal"><div class="pimg"><img src="assets/dish-braised.jpg" alt="纪录片同款食材"></div><div class="pb"><h4>纪录片同款食材</h4><p>如纪录片中呈现的顺德鱼腐、剑门关土鸡等</p></div></div>
+      <div class="jdp reveal d1"><div class="pimg"><img src="assets/dish-boil.jpg" alt="寻味联名预制菜"></div><div class="pb"><h4>寻味联名预制菜</h4><p>乐山翘脚牛肉、顺德毋米粥等优选优质生产商的地域特色产品</p></div></div>
+      <div class="jdp reveal d2"><div class="pimg"><img src="assets/giftbox.jpg" alt="IP联名文创礼盒"></div><div class="pb"><h4>IP联名文创礼盒</h4><p>联名节日礼盒、纪录片IP周边（如美食护照等）</p></div></div>
+      <div class="jdp reveal d3"><div class="pimg"><img src="assets/farm-veg.jpg" alt="寻味原产地农产品"></div><div class="pb"><h4>寻味原产地农产品</h4><p>有政府背书的区域公用品牌</p></div></div>
+    </div>
+
+    <div class="gov reveal">
+      <h3>政企合作 · 文旅 + 美食 + 农产品上行</h3>
+      <div class="gcap">《寻味中国》通过内容讲述饮食文化故事 · 京东生鲜打造农产品上行渠道</div>
+      <div class="gov-grid">
+        <div class="gov-item"><div class="who">地方政府 · 农业农村</div><div class="val">农产品销售增长</div></div>
+        <div class="gov-item"><div class="who">地方政府 · 文旅</div><div class="val">文旅引流</div></div>
+        <div class="gov-item"><div class="who">地方政府 · 商务</div><div class="val">城市品牌曝光</div></div>
+        <div class="gov-item"><div class="who">地方政府 · 乡村振兴</div><div class="val">乡村振兴助农</div></div>
+      </div>
+      <div class="gov-foot">
+        <span>国家级内容背书</span><span>全域媒体分发</span><span>农产产地直采</span><span>寻味中国 × 京东生鲜 双背书</span><span>旗舰店独家首发</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 合作洽谈 · 页脚 ================= -->
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <h2 class="reveal">与顶级美食IP <em>共创「文化 + 消费」双赢格局</em></h2>
+    <p class="reveal">以文化自信定义中国美食的价值标杆 · 诚邀品牌伙伴共赢国家级传播盛宴</p>
+    <div class="tel-line reveal">
+      <span>商务合作热线<a class="tel" href="tel:18511664111" style="margin-left:10px">185 1166 4111</a></span>
+      <span class="mail">合作洽谈邮箱 · ZSHCCM@163.COM</span>
+    </div>
+    <div class="hero-actions reveal">
+      <a href="#auth" class="btn btn-gold">回看授权体系</a>
+      <a href="#top" class="btn btn-line">回到顶部</a>
+    </div>
+    <div class="footer">
+      <div class="fb">
+        <span class="fmark">泓</span>
+        <span><b>中视泓创国际传媒</b><em>北京中视泓创国际文化传媒有限公司</em></span>
+      </div>
+      <p>《寻味中国》IP商务运营手册 V2.0 · 本文件仅供商务合作沟通使用 © 2026 中视泓创</p>
+    </div>
+  </div>
+</section>
+
+<button class="totop" id="totop" aria-label="返回顶部">↑</button>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var totop=document.getElementById('totop');
+  var menu=document.getElementById('menu');
+  var hamburger=document.getElementById('hamburger');
+
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    nav.classList.toggle('scrolled',y>60);
+    totop.classList.toggle('show',y>600);
+    var links=menu.querySelectorAll('a:not(.btn-nav)');
+    var current='';
+    links.forEach(function(l){
+      var s=document.querySelector(l.getAttribute('href'));
+      if(s && s.offsetTop-120<=y) current=l.getAttribute('href');
+    });
+    links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')===current);});
+  },{passive:true});
+
+  hamburger.addEventListener('click',function(){
+    hamburger.classList.toggle('open');
+    menu.classList.toggle('open');
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      hamburger.classList.remove('open');
+      menu.classList.remove('open');
+    });
+  });
+
+  totop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target);}});
+    },{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});
+
+    var co=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting)return;
+        var el=e.target,target=parseFloat(el.dataset.target),dec=parseInt(el.dataset.decimal||'0');
+        var t0=null,dur=1600;
+        function step(ts){
+          if(!t0)t0=ts;
+          var p=Math.min((ts-t0)/dur,1);
+          p=1-Math.pow(1-p,3);
+          el.textContent=(target*p).toFixed(dec);
+          if(p<1)requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        co.unobserve(el);
+      });
+    },{threshold:.4});
+    document.querySelectorAll('.counter').forEach(function(el){co.observe(el);});
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+  }
+})();
+</script>
+</body>
+</html>
