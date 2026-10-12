@@ -212,9 +212,9 @@ section[id]{scroll-margin-top:70px}
 
 /* ============ 意义·愿景·口号 ============ */
 .creed{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
-.creed-visual{position:relative;border-radius:8px;overflow:hidden;box-shadow:var(--shadow-lg)}
-.creed-visual img{width:100%;height:430px;object-fit:cover}
-.creed-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(13,9,3,.6))}
+.creed-visual{position:relative;border-radius:8px;overflow:hidden;box-shadow:var(--shadow-lg);background:radial-gradient(ellipse at 50% 130%,rgba(201,160,80,.16),transparent 62%),var(--ink)}
+.creed-visual img{width:100%;height:430px;object-fit:contain;box-sizing:border-box;padding:70px 54px}
+.creed-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 62%,rgba(13,9,3,.55))}
 .creed-visual .cap{position:absolute;left:24px;bottom:20px;z-index:2;color:#F2E9CF;font-family:var(--serif);font-size:14px;letter-spacing:.2em}
 .creed-copy .item{border-left:3px solid var(--gold);padding:4px 0 4px 20px;margin-bottom:18px}
 .creed-copy .item h4{font-family:var(--serif);color:var(--brown);font-size:13px;letter-spacing:.3em;font-weight:700;margin-bottom:6px}
@@ -676,8 +676,8 @@ section[id]{scroll-margin-top:70px}
     </div>
     <div class="creed">
       <div class="creed-visual reveal">
-        <img src="assets/scroll.jpg" alt="寻味中国卷轴书法">
-        <div class="cap">「寻味中国」IP 书法视觉</div>
+        <img src="assets/logo-silver-h.png" alt="寻味中国 Taste of China 主标识">
+        <div class="cap">「寻味中国」IP 主标识</div>
       </div>
       <div class="creed-copy reveal d1">
         <div class="item"><h4>IP 意义</h4><p>让离开家乡的人，<em>吃得出回家的味道</em><br>让来到城市的人，吃得懂这座城的性格<br>让生活在这里的人，吃得见自己的根<br>让镜头里的美味，走进千家万户的餐桌</p></div>
@@ -714,7 +714,7 @@ section[id]{scroll-margin-top:70px}
 
     <div class="cities">
       <div class="city-card reveal">
-        <div class="cimg"><img src="assets/dimsum.jpg" alt="寻味中国·顺德"><span class="badge">拍摄中</span></div>
+        <div class="cimg art"><img src="assets/city-sd.png" alt="寻味中国·顺德"><span class="badge">拍摄中</span></div>
         <div class="cbody">
           <h3>《寻味中国·顺德》</h3>
           <div class="meta">暨《寻味顺德》第二季 · 6集 × 25分钟</div>
